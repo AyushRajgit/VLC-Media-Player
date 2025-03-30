@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+/* Header-Styling */
+header {
+    height: 5rem;
+}
+
+.titleBar {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-img {
+    margin-left: 1rem;
+    height: 80%;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.menuBar {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    height: 50%;
+}
+
+.menu {
+    position: relative; 
+    padding: 4px;
+}
+/* Relative : occupy its own position
+   shifting all below elements and has 
+   liberty to move occupying its own area. */
+
+/* Absolute : Leaves its own position 
+   and placed according to page by default
+   
+   If wrt to parent then parent need to be
+   set relative.
+   
+   Uses : left, top property. */
+
+.menu-btn:hover {
+    background-color: rgba(118, 148, 233, 0.998);
+}
+
+.menu:hover .menu-items {
+    display: block;
+}
+
+.menu-items {
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 13px;
+    width: 7rem;
+    display: none;
+}
+
+.menu-items li:hover {
+    background-color: rgb(177, 171, 171);
+}
+
+li {
+    padding: 0.3rem;
+}
+
+.videoInput {
+    display: none;
+}
+
+/* Main-Styling */
+main {
+    background-color: black;
+    height: calc(100vh - 8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    height: 100%;
+}
+
+/* Footer-Styling */
+footer {
+    height: 3rem;
+}
+
+.toast {
+    color: aliceblue;
+    font-size: 1.7rem;
+    position: fixed;
+    background-color: black;
+    top: 99px;
+    right: 47px;
+    display: none;
+}

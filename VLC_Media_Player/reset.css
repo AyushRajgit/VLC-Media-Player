@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+/* To remove bullet points in Unordered List */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
