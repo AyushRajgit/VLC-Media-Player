@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="titleBar">
-            <img src="Logo.png" alt="" class = "title-img">
+            <img src="VLC Logo..png" alt="" class = "title-img">
             <h1 class = "title">VLC Media Player</h1>
         </div>
 
@@ -47,9 +47,17 @@
     <div class="toast">100%</div>
 
     <footer>
-        <i class="fa-solid fa-play"></i>
-        <i class="fa-solid fa-pause"></i>
-        <i class="fa-solid fa-expand" id = "fullScreen"></i>
+        <div class = "progress-bar" id = "progressBar">
+            <div id = "Bar">
+                <div id = "percentDone">0%</div>
+            </div>
+        </div>
+
+        <div class = "controls" id = "controller">
+            <i class="fa-solid fa-play" id = "play"></i>
+            <i class="fa-solid fa-pause" id = "pause"></i>
+            <i class="fa-solid fa-expand" id = "fullScreen"></i>
+        </div>
     </footer>
 </body>
     <script src="script.js"></script>

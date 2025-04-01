@@ -18,7 +18,6 @@ const acceptInputHandler = (obj) => {
     videoElement.setAttribute("class","video");
     videoElement.src = link;
     videoPlayer.appendChild(videoElement);
-    videoElement.play();
     videoElement.volume = 0.3;
 }
 videoBtn.addEventListener("click",handleInput);
@@ -100,8 +99,44 @@ function showToast(message) {
 
 /* Controls for VLC Media Player */
 const fullScreen = document.querySelector("#fullScreen");
+const playBtn = document.querySelector("#play");
+const pauseBtn = document.querySelector("#pause");
+
 
 const handleFullScreen = () => {
     videoPlayer.requestFullscreen();
 }
 fullScreen.addEventListener("click",handleFullScreen);
+
+
+
+const handlePlayBtn = () => {
+    const videoElement = document.querySelector("video");
+    const ProgBar = document.querySelector("#Bar");
+    const percent = document.querySelector("#percentDone");
+    videoElement.play();
+
+    playBtn.style.color = "gray";
+    pauseBtn.style.color = "black";
+
+    // Starting Progress Bar :
+    videoElement.addEventListener("timeupdate",() => {
+        const TotTime = videoElement.duration;
+        const currTime = videoElement.currentTime;
+        const ProgressPercent = (currTime/TotTime)*100;
+        ProgBar.style.width = ProgressPercent+"%";
+        percent.textContent = Math.floor(ProgressPercent)+"%";
+    });
+}
+playBtn.addEventListener("click",handlePlayBtn);
+
+
+
+const handlePauseBtn = () => {
+    const videoElement = document.querySelector("video");
+    videoElement.pause();
+
+    pauseBtn.style.color = "gray";
+    playBtn.style.color = "black";
+}
+pauseBtn.addEventListener("click",handlePauseBtn);
