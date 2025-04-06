@@ -1,0 +1,115 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    height: 110px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+#logoContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+#logoContainer #logo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#logoContainer span {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#SearchMenu {
+    height: calc(110px-55px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    height: 32px;
+    width: 240px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding-left: 10px;
+    outline: none;
+}
+
+#searchBtn {
+    background-color: rgba(7, 7, 7, 0.947);
+    border: none;
+}
+#searchBtn i {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#searchBtn i:hover {
+    color: rgb(108, 103, 103);
+}
+
+main {
+    height: calc(100vh - 170px);
+    width: 100vw;
+    background-color: rgba(12, 11, 11, 0.904);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.weather-condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.weather-condition .temperature {
+    font-size: 24px;
+}
+
+.weather-condition .location-data .location {
+    font-size: 44px;
+}
+
+.weather-condition .location-data .time {
+    font-size: 18px;
+}
+
+.weather-condition .location-data .date {
+    font-size: 18px;
+}
+
+.weather-condition .weather-state .icon {
+    height: 5rem;
+}
+
+.weather-condition .weather-state .condition {
+    font-size: 24px;
+}
+
+footer {
+    height: 60px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.986);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
