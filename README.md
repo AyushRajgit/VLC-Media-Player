@@ -3,7 +3,7 @@ A modern and responsive VLC-style web media player that allows users to play, pa
 and control video/audio directly from the browser — built with a sleek UI and essential playback features.
 
 ## 🚀 Demo
-🌐 [Live Demo](https://your-deployed-link.vercel.app)  
+🌐 [Live Demo](https://vlc-media-player-coral.vercel.app/)  
 
 ## 📌 Features
 - 🎥 Play/Pause Video & Audio
