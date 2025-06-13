@@ -141,171 +141,202 @@ footer {
     font-size: 22px;
 }
 
-/* ================================
-   MEDIA QUERIES - RESPONSIVE DESIGN
-   ================================ */
 
-/* Mobile devices (320px - 480px) */
+/* ================================
+   📱 Mobile Devices (max-width: 480px)
+   ================================ */
 @media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
     header {
         height: 4rem;
     }
-    
+
     .titleBar {
         gap: 0.5rem;
     }
-    
+
     .title-img {
         margin-left: 0.5rem;
-        height: 70%;
+        height: 65%;
     }
-    
+
     .title {
         font-size: 0.8rem;
     }
-    
+
     .menuBar {
-        gap: 0.5rem;
+        gap: 0.4rem;
         margin-left: 0.5rem;
     }
-    
+
     .menu-items {
         width: 6rem;
         top: 10px;
     }
-    
+
     main {
         height: calc(100vh - 8rem);
     }
-    
+
     .video {
         width: 100%;
         height: auto;
     }
-    
+
     .toast {
         font-size: 1.2rem;
-        top: 80px;
-        right: 10px;
-        padding: 0.5rem;
+        top: 75px;
+        right: 12px;
+        padding: 0.4rem;
     }
-    
+
     footer {
         height: 4rem;
     }
-    
+
     .progress-bar {
         height: 1rem;
     }
-    
+
     .progress-bar #Bar #percentDone {
         font-size: 0.9rem;
     }
-    
+
     .controls {
         padding-top: 0.5rem;
     }
-    
+
     .controls i {
         padding-right: 1rem;
         font-size: 18px;
     }
 }
 
-/* Tablets (481px - 768px) */
+/* ================================
+   📱 Tablets (481px - 768px)
+   ================================ */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
     .titleBar {
         gap: 0.8rem;
     }
-    
+
+    .title-img {
+        height: 75%;
+    }
+
     .title {
         font-size: 0.9rem;
     }
-    
+
     .menuBar {
-        gap: 0.8rem;
+        gap: 0.7rem;
     }
-    
+
     .menu-items {
         width: 6.5rem;
     }
-    
+
     .video {
         width: 95%;
         height: auto;
     }
-    
+
     .toast {
         font-size: 1.5rem;
-        top: 90px;
-        right: 20px;
+        top: 85px;
+        right: 18px;
     }
-    
+
     .controls i {
         padding-right: 1.2rem;
         font-size: 20px;
     }
 }
 
-/* Small laptops and large tablets (769px - 1024px) */
+/* ================================
+   💻 Small Laptops & Large Tablets (769px - 1024px)
+   ================================ */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
     .video {
         width: 90%;
         height: auto;
     }
-    
+
     .toast {
         right: 30px;
     }
 }
 
-/* Large screens (1025px - 1200px) */
+/* ================================
+   💻 Medium Screens (1025px - 1200px)
+   ================================ */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .video {
         width: 85%;
     }
+
+    .controls i {
+        font-size: 23px;
+    }
 }
 
-/* Extra large screens (1201px and above) */
+/* ================================
+   🖥️ Large Screens (1201px and above)
+   ================================ */
 @media screen and (min-width: 1201px) {
     .video {
         max-width: 80%;
     }
-    
+
     .title {
         font-size: 1.1rem;
     }
-    
+
     .controls i {
         font-size: 24px;
     }
 }
 
-/* Landscape orientation adjustments */
+/* ================================
+   🧭 Landscape Mode (short-height screens)
+   ================================ */
 @media screen and (orientation: landscape) and (max-height: 500px) {
     header {
         height: 3rem;
     }
-    
+
     main {
         height: calc(100vh - 6rem);
     }
-    
+
     footer {
         height: 3rem;
     }
-    
+
     .progress-bar {
         height: 0.8rem;
     }
-    
+
     .controls {
         padding-top: 0.3rem;
     }
 }
 
-/* High resolution displays */
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
+/* ================================
+   🔍 High Resolution / Retina Displays
+   ================================ */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
        screen and (min-resolution: 192dpi) {
     .title-img {
         image-rendering: -webkit-optimize-contrast;
@@ -313,21 +344,19 @@ footer {
     }
 }
 
-/* Hover support detection */
+/* ================================
+   🤏 Touch Devices - No Hover
+   ================================ */
 @media (hover: none) and (pointer: coarse) {
-    .menu-btn:hover {
-        background-color: transparent;
-    }
-    
+    .menu-btn:hover,
     .menu-items li:hover {
         background-color: transparent;
     }
-    
-    /* Touch-friendly adjustments */
+
     .menu {
         padding: 8px;
     }
-    
+
     .controls i {
         padding-right: 2rem;
         font-size: 28px;
