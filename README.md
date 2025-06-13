@@ -21,5 +21,4 @@ and control video/audio directly from the browser — built with a sleek UI and 
 
 ![Screenshot (14)](https://github.com/user-attachments/assets/c95860aa-b910-4ca7-8cb8-783498a92ec5)
 
-![Screenshot (11)](https://github.com/user-attachments/assets/839b6641-4ea9-4404-b83d-fea187a933fe)
-
+![Screenshot (16)](https://github.com/user-attachments/assets/ee4c5212-4bdf-4f93-b310-570c77d3b306)
