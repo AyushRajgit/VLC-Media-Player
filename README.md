@@ -17,3 +17,9 @@ and control video/audio directly from the browser — built with a sleek UI and 
 - **Deployment:** Vercel
 
 ## 🖥️ Screenshots
+![Screenshot (15)](https://github.com/user-attachments/assets/c299e22f-6abe-4d3f-837b-e01c9a2762db)
+
+![Screenshot (14)](https://github.com/user-attachments/assets/c95860aa-b910-4ca7-8cb8-783498a92ec5)
+
+![Screenshot (11)](https://github.com/user-attachments/assets/839b6641-4ea9-4404-b83d-fea187a933fe)
+
